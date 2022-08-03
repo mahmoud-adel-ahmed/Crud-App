@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 0;
+  text-transform: capitalize;
+  outline: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(212, 83, 83);
+}
+
+.courses {
+  width: 90vw;
+  max-width: 50rem;
+  padding: 3rem 1.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgb(248, 70, 70);
+}
+
+.add-courses {
+  background: rgb(212, 83, 83);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.add-courses h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.courses .form {
+  display: grid;
+  grid-template-columns: auto 8rem;
+  margin-bottom: 1.5rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 0.1rem solid #eee;
+  font-size: 1rem;
+  text-transform: none;
+  caret-color: #f00;
+}
+
+.courses .pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.pair h3 {
+  color: #555;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.empty {
+  text-align: center;
+}
+
+.empty p {
+  color: #666;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.del,
+.edit,
+.add,
+.update {
+  color: #fff;
+  border: 0;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.del,
+.edit {
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.5rem;
+}
+.add,
+.update {
+  font-size: 0.9rem;
+  width: 100%;
+  background-color: rgb(31, 215, 31);
+}
+
+.del {
+  background: rgb(246, 64, 64);
+}
+.edit {
+  background: rgb(114, 106, 106);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
